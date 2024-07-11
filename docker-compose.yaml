@@ -1,15 +1,15 @@
 version: '3'
 services:
   webhook_server:
-    image: niebanupat/line-oa-webhook:latest
+    image: niebanupat/line-oa-midterm:latest
     expose:
-      - 4001
+      - 4002
     ports:
-      - "4001:4001"
+      - "4002:4002"
     environment:
-      - PORT=4001
-      - LINE_CHANNEL_ACCESS_TOKEN=gUoqmPVqkt1HfrdNbpwgwbm/Ks36KAyb1a1Zpmm96kwdanRIQadren2sYkzVcEVac2DDpBVr0c2VtBHv31MyZ45UD/ItPK5n/h43dmpdnGKtg842lhpT1bXiyfLfPXm3rX8g2VsXg2bGn0S2QWXh+QdB04t89/1O/w1cDnyilFU=
-      - LINE_NOTIFY_TOKEN=7EVIPHjn5D6Q3HT8JumbQINnZmpP4dkKQ9cgjZPR6sG
-      - LINE_CHANNEL_ID=2005593085
-      - LINE_CHANNEL_SECRET=1e44c489dce4b8f8dce316a57ceb6c95
+      - PORT=4002
+      - LINE_CHANNEL_ACCESS_TOKEN=kFphEE2AzaYvldOR2fxZCwpVX2gzuVOTYWoVC8XAm4H1SZT0szfSUxv7EwwBDAmymHSc1P0kxafES+gGMks5+RE6MhZHn503Bqyf8Ib176EfrEgJ031emr3KAd51SG/cSd3F89fUROL2MiC9l1OnFQdB04t89/1O/w1cDnyilFU=
+      # - LINE_NOTIFY_TOKEN=7EVIPHjn5D6Q3HT8JumbQINnZmpP4dkKQ9cgjZPR6sG
+      - LINE_CHANNEL_ID=2005791577
+      - LINE_CHANNEL_SECRET=5a691dcf100fbe174be97e1f5d01a263
       - GEMINI_API_KEY=AIzaSyDB8kPyHT70iBBJHfaElEY_oGExM94k_pg

@@ -19,10 +19,11 @@ export const handleDialogflowFulfillmentWebhook = async (
       req.body.originalDetectIntentRequest.payload.data.source.userId;
     const replyToken =
       req.body.originalDetectIntentRequest.payload.data.replyToken;
-
+    
     const agent = new WebhookClient({ request: req, response: res });
     client = new Client(replyToken);
     console.log("Query Text: " + agent.query);
+      
     if (
       agent.query === "รายชื่อหนังสือ" ||
       agent.query === "หนังสือ" ||
